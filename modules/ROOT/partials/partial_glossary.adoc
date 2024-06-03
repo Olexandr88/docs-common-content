@@ -79,7 +79,7 @@ The base layer of a blockchain network, such as Ethereum, where transactions are
 [#l2]
 == Layer 2, L2
 
-Exists on top of an L1 blockchain, such as Ethereum, in order to add value to the L1, by providing features such as massive computation scale and security. Starknet is an L2 blockchain that exists on Ethereum.
+Exists on top of an L1 blockchain, such as Ethereum, in order to add value to the L1, by providing features such as massive computation scale without compromising on Ethereum’s composability and security.
 
 // [#l3]
 // == Layer 3, L3
