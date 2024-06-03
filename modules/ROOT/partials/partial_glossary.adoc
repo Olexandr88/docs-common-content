@@ -71,6 +71,22 @@ The smallest denomination of STRK. 1 fri = 10^-18^ STRK.
 
 A machine that runs the Starknet execution protocol. A full node stays synchronized with the latest state of the network, stores past blocks and transactions, and enables users to interact with the network, such as by querying its state or by broadcasting new transactions.
 
+[#l1]
+== Layer 1, L1
+
+The base layer of a blockchain network, such as Ethereum, where transactions are directly recorded and validated. It includes the underlying protocol and consensus mechanism that establish the foundational rules for the blockchain.
+
+[#l2]
+== Layer 2, L2
+
+Exists on top of an L1 blockchain, such as Ethereum, in order to add value to the L1, by providing features such as massive computation scale without compromising on Ethereum’s composability and security.
+
+// [#l3]
+// == Layer 3, L3
+
+// Built on top of an L2 solution, providing further enhancements or specialized functionalities.
+
+
 [#multicall]
 == multicall
 
@@ -103,13 +119,13 @@ A set of services that together receive transactions from the network, put them 
 [#SHARP]
 == SHARP
 
-The Shared Prover (SHARP), is a mechanism used in Starknet that aggregates multiple Cairo programs from different users, each containing different logic. These Cairo programs are then executed together, generating a single proof common to all the programs.
+The Shared Prover (SHARP) is a mechanism used in Starknet that aggregates multiple Cairo programs from different users, each containing different logic. These Cairo programs are then executed together, generating a single proof common to all the programs.
 
 
 [#sierra]
 == Sierra
 
-An intermediate representation between Cairo and Casm. Sierra code is then compiled to a Casm program with the property that, for any input, the execution of the program is provable. In particular, it ensures that the execution of a transaction is provable regardless of whether the execution succeeded or was reverted due to an error.
+An intermediate representation between Cairo and Casm. Sierra code is then compiled into a Casm program with the property that, for any input, the program's execution is provable. In particular, it ensures that the execution of a transaction is provable regardless of whether the execution succeeded or was reverted due to an error.
 
 .Additional resources
 
@@ -127,12 +143,19 @@ A smart contract deployed on Ethereum. Its address is link:https://etherscan.io/
  by storing:
 
 * The commitment to the L2 state.
-* The Starknet OS program hash – effectively defining the version of Starknet the network is running.
+* The Starknet OS program hash – effectively defines the version of Starknet the network is running.
 
-The committed state on the L1 Core Contract acts as the consensus mechanism of Starknet,that is, the system is secured by the L1 Ethereum consensus. In addition to maintaining the state, the Starknet L1 Core Contract is the main hub of operations for Starknet on L1. Specifically:
+The committed state on the L1 Core Contract acts as the consensus mechanism of Starknet, that is, the system is secured by the L1 Ethereum consensus. In addition to maintaining the state, the Starknet L1 Core Contract is the main hub of operations for Starknet on L1. Specifically:
 
 * It stores the list of allowed verifier contracts that can verify state update transactions
 * It deals with cross-layer interaction between L1 and L2.
+
+[#starknet]
+== Starknet
+
+A permissionless Validity-Rollup, also known as a zero-knowledge rollup (ZK rollup) for Ethereum. Starknet is a Layer 2 (L2) blockchain, enabling any dApp to achieve massive computation scale without compromising Ethereum’s composability and security.
+
+Starknet aims to achieve secure, low-cost transactions and high performance by using the STARK cryptographic proof system. Starknet contracts and the Starknet OS are written in Cairo, a custom-built and specialized programming language.
 
 [#starknet-os]
 == Starknet OS
