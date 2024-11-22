@@ -35,7 +35,7 @@ It's much simpler to just include a file from the child repo with an `include` d
 
 To bring the child file into the parent site:
 
-. Create a parent file in the parent site named `glossary.adoc`. For example, I created this file as `https://github.com/starknet-io/starknet-docs/dev/components/Starknet/modules/ROOT/pages/glossary.adoc`. Here's the entire contents of `glossary.adoc`:
+. Create a parent file in the parent site named `glossary.adoc`. For example, I created this file as `https://github.com/starknet-io/starknet-docs/blob/main/components/Starknet/modules/ROOT/nav_glossary.adoc`. Here's the entire contents of `glossary.adoc`:
 +
 [source,adoc]
 ----
